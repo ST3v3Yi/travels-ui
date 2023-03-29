@@ -21,9 +21,7 @@
             <span @click="register" style="cursor: pointer">注册</span>
           </div>
           <div v-else class="avatarContainer">
-            <div @click="logout">
-              <el-avatar :size="36" :src="require('@/assets/avatar.jpg')" class="avatar"></el-avatar>
-            </div>
+            <el-avatar :size="36" :src="require('@/assets/avatar.jpg')" class="avatar" @click="logout"></el-avatar>
           </div>
         </div>
       </el-menu>
